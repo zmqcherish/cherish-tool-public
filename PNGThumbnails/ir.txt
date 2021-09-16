@@ -1,0 +1,5 @@
+require_relative "C:/Users/zmq_c/OneDrive/code/PNGThumbnails/te.rb"
+load "C:/Users/zmq_c/OneDrive/code/PNGThumbnails/te.rb"
+
+
+require_relative "D:/download/Image Processing/chunky_png-master/chunky_png-master/lib/chunky_png.rb"

@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "sohu-auto",
+    "version": "6.0",
+	"description": "sohu-auto",
+	"author": "cherish",
+    // "icons": {
+    //     "16": "images/icon.png",
+    //     "48": "images/icon.png"
+    // },
+    "browser_action": {
+        // "default_icon": {
+        //     "19": "images/icon.png",
+        //     "38": "images/icon.png"
+        // },
+        "default_title": "sohu"
+       // "default_popup": "popup.html"
+    },
+	"background":
+	{
+		// 2种指定方式，如果指定JS，那么会自动生成一个背景页
+		// "page": "background.html"
+		"scripts": ["js/background.js", "js/util.js"]
+	},
+	"permissions": [
+		"contextMenus",
+		"tabs", "https://*/*"
+	],
+    // "background":
+    // {
+    //     // 2种指定方式，如果指定JS，那么会自动生成一个背景页
+    //     // "page": "background.html"
+    //     "scripts": ["js/background.js"]
+    // }
+    "content_scripts": [
+        {
+            // "matches": ["*://oa.sohu-inc.com/WorkSpace/MyJoined.aspx"],//改成你要加载的页面url,比如*://www.baidu.com/
+            "matches": ["*://mp.sohu.com/*", "*://test.mp.sohu.com/*"],
+            "js": ["js/util.js", "js/index.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
