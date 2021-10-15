@@ -7,6 +7,7 @@
 - uTools: 强大的工具集合
 - OBS-Studio：录制屏幕
 - ScreenToGif：屏幕录制（gif格式）
+- Ventoy：U盘多系统启动
 
 # 下载工具
 - Internet Download Manager (IDM)，收费
