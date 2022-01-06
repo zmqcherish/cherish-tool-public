@@ -4,6 +4,7 @@
 - PowerToys：Win系统自带工具集合
 - TeamViewer：远程控制
 - CCleaner：清理电脑的小工具
+- SpaceSniffer: 磁盘空间分析
 - uTools: 强大的工具集合
 - OBS-Studio：录制屏幕
 - ScreenToGif：屏幕录制（gif格式）
@@ -31,7 +32,7 @@
 - Postman：HTTP请求
 - Fiddler、Mitmdump：抓包工具（http）
 - Wireshark：抓包工具
-- apache-jmeter：抓包
+- apache-jmeter：性能测试、抓包
 - AnotherRedisDesktopManager：Redis客户端
 - Server酱：推送通知，从服务器推报警和日志到手机的工具
 - Proxifier：代理工具
@@ -49,3 +50,7 @@
 - Jsonformater：请求显示Json格式化数据
 - SwitchyOmega：代理管理
 - Autofill：表单填充
+
+# 摄影工具
+- Startrails：星轨制作
+- Sequator：星空后期（叠加、降噪）

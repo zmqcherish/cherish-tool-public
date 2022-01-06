@@ -5,6 +5,7 @@ from pywinauto.application import Application
 from pywinauto.win32functions import SetFocus
 from pywinauto import mouse
 from pywinauto.keyboard import send_keys
+from pynput.mouse import Listener
 from time import sleep
 
 def a():
@@ -20,6 +21,12 @@ def a():
 	# dlg_open.Edit.set_text('D:/download/test')
 	# dlg_open['打开'].click()
 	print(dlg)
+
+def on_click(x, y, button, pressed):  # 监听鼠标点击
+	print('{0} at {1}'.format('Pressed' if pressed else 'Released', (x, y)))
+	if not pressed:  # 如果没有按压就结束程序（即，单击一下鼠标会结束程序）
+		# Stop listener
+		return False
 
 def move_and_click(x, y):
 	pyautogui.moveTo(x, y)
@@ -82,4 +89,9 @@ def ctrl_wechat():
 	 # 结束进程，释放资源
 	# app.kill()
 	a=1
-ctrl_mini_app()
+
+# 连接事件以及释放
+# with Listener(on_click=on_click) as listener:
+# 	listener.join()
+input('aaa')
+

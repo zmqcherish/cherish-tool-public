@@ -1,7 +1,7 @@
 from util import *
 import requests
 from bs4 import BeautifulSoup
-from db_helper import *
+# from db_helper import *
 
 @except_decorative
 def download_single(_id, name):
@@ -34,5 +34,5 @@ def main():
 		file_name = f'mp3\天气之子\{title}.mp3'
 		download_single(_id, file_name)
 	
-download_single(39436744, '52 weeks.mp3')
+download_single(30375354, 'Still.mp3')
 # main()
