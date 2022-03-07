@@ -20,8 +20,6 @@ def download_single(_id, name):
 		return False
 	urlretrieve(r.url, name)
 
-# download_single(409302035, '1.mp3')
-
 def main():
 	text = get_txt_file_raw('file/wyy.html')
 	soup = BeautifulSoup(text)
@@ -34,5 +32,5 @@ def main():
 		file_name = f'mp3\天气之子\{title}.mp3'
 		download_single(_id, file_name)
 	
-download_single(30375354, 'Still.mp3')
+download_single(528303, '届かない気持ち（无法传达的心意）.mp3')
 # main()

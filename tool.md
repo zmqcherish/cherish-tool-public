@@ -9,6 +9,7 @@
 - OBS-Studio：录制屏幕
 - ScreenToGif：屏幕录制（gif格式）
 - Ventoy：U盘多系统启动
+- [czkawka](https://github.com/qarmin/czkawka)：查找重复/相似文件
 
 # 下载工具
 - Internet Download Manager (IDM)，收费
@@ -39,9 +40,12 @@
 - WinScp: SSH图形化SFTP客户端
 - Ngrok：内网穿透
 - frp：内网穿透
-- putty：远程管理Linix
+- putty：远程管理Linux
 - JsonViewer：Json查看
 - studio3t: mongo数据库管理
+- Spy++：查看Windows窗口/进程/线程详情的工具
+- FlaUInspect：查看Windows窗体详情的工具，比Spy++详细
+- PrettyZoo：Zookeeper可视化工具
 
 - dotPeek: NET反编译
 
